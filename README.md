@@ -58,7 +58,7 @@ After training the model for 30 epochs with a batch size of 32, the performance 
 | Weighted Avg  |   0.86    |   0.86   |   0.86   |  99906  |
 
 ### Confusion Matrix:
-[[64809  6642]
+[[64809  6642]<br>
  [ 6858 21597]]
 
 ### Additional Metrics:
