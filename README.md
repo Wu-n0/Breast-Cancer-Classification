@@ -44,4 +44,31 @@ The "breast_cancer_classifier.py" file contains the definition of the BreastCanc
 
 The "train_classifier.py" script trains and evaluates the BreastCancerClassifier model for breast cancer classification. It imports necessary libraries and sets the initial values for epochs, learning rate, and batch size. The dataset is split into training, validation, and testing sets, and class weights are calculated to handle class imbalance. Data augmentation is applied to the training data for regularization. The BreastCancerClassifier model is initialized with the Adagrad optimizer and binary cross-entropy loss. The model is then trained using the fit() method with the training and validation data generators. After training, the model is evaluated on the testing data, and a classification report is displayed showing metrics like precision, recall, and F1-score for each class. The confusion matrix is computed, and accuracy, specificity, and sensitivity are calculated and displayed. Finally, the training loss and accuracy are plotted to visualize the model's performance during training.
 
+## Model Performance
+
+After training the model for 30 epochs with a batch size of 32, the performance on the testing set is as follows:
+
+|               | Precision |  Recall  | F1-Score | Support |
+|:-------------:|:---------:|:--------:|:--------:|:-------:|
+| Class 0 (Negative) |   0.90    |   0.91   |   0.91   |  71451  |
+| Class 1 (Positive) |   0.76    |   0.76   |   0.76   |  28455  |
+|               |           |          |          |         |
+| Accuracy      |           |          |   0.86   |  99906  |
+| Macro Avg     |   0.83    |   0.83   |   0.83   |  99906  |
+| Weighted Avg  |   0.86    |   0.86   |   0.86   |  99906  |
+
+### Confusion Matrix:
+[[64809  6642]
+ [ 6858 21597]]
+
+### Additional Metrics:
+
+- Overall F1-score: 0.86
+- Specificity: 0.76 (Class 1 - Positive)
+- Sensitivity: 0.91 (Class 0 - Negative)
+
+The model shows good performance in distinguishing between malignant and benign breast cancer cases.
+
+
+
 
