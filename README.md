@@ -70,5 +70,5 @@ After training the model for 30 epochs with a batch size of 32, the performance 
 The model shows good performance in distinguishing between malignant and benign breast cancer cases.
 
 
-
+![Model Performance](plot.png)
 
